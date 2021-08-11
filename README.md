@@ -47,6 +47,9 @@ If you have a tool like [K9s](https://k9scli.io/), you can start it up to see th
 <br><br>*Be sure to repeat this process for all the clusters in this setup*.
 
 ## Fleet Controller Cluster & Downstream Cluster Registration
+
+![RKE and Fleet Workflow](rke-plus-fleet-workflow.png)
+
 In order for your Fleet multi cluster management installation to properly work it is important the correct API server URL and CA certificates are configured properly. The Fleet agents will communicate to the Kubernetes API server URL. This means the Kubernetes API server must be accessible to the downstream clusters. You will also need to obtain the CA certificate of the API server.
 
 Decode *certificate-authority-data* field from kubeconfig:
