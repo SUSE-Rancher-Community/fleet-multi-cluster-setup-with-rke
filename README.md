@@ -1,6 +1,5 @@
 # Fleet Multi-Cluster Management (Local K8s Environment)
-This repository contains the source code for a multi cluster management setup with Fleet in a local environment.
-One cluster is used by the Fleet manager/server and the other two are downstream clusters that Fleet deploys to. 
+This repository contains the source code for a multi cluster management setup with Fleet in a local environment. One cluster is used by the Fleet manager/server and the other two are downstream clusters that Fleet deploys to. 
 
 ![RKE and Fleet Logo](rke-plus-fleet.png)
 
