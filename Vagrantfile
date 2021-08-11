@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
         v.cpus = 2
         end
     end
-    ## Downstream Cluster 1 Master
+    ## Downstream Cluster 1 Control Plane
     config.vm.define "downstream1_master" do |downstream1_master|
       downstream1_master.vm.provision "shell", path: "script.sh"
       downstream1_master.vm.network "private_network", ip: "192.168.10.5" 
@@ -45,7 +45,7 @@ Vagrant.configure("2") do |config|
         v.cpus = 2
       end
     end
-    ## Rancher Control Plane
+    ## Downstream Cluster Control Plane
     config.vm.define "downstream2_master" do |downstream2_master|
       downstream2_master.vm.provision "shell", path: "script.sh"
       downstream2_master.vm.network "private_network", ip: "172.16.130.4" 
